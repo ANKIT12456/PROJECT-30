@@ -10,6 +10,7 @@ class BOX{
         }
         this.body=Bodies.rectangle(x,y,50,50,options);
         this.image=loadImage("sprite_0.png");
+        this.visiblity=255;
         World.add(world,this.body);
     }
 
@@ -22,7 +23,7 @@ class BOX{
             translate(pos.x, pos.y);
             rotate(angle);
             imageMode(CENTER);
-            image( this.image,0,0,50,50);
+            image(this.image,0,0,50,50);
             pop();
             }
         else{
